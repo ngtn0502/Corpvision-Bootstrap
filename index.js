@@ -43,10 +43,10 @@ window.addEventListener("scroll", checkHeader);
 
 ////////////////////////////////////////////////////// Header DROPDOWN
 
-// document
-//   .querySelector(".navbar-toggler")
-//   .addEventListener("click", function (e) {
-//     document.querySelector("header").classList.toggle("backgroundColor-btn");
-//   });
+document
+  .querySelector(".navbar-toggler")
+  .addEventListener("click", function (e) {
+    document.querySelector("header").classList.toggle("dropdown__btn");
+  });
 
 ////////////////////////////////////////////////////// Carousel mod

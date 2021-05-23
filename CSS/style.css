@@ -15,6 +15,7 @@
   --displayDarkMode-moon: inline;
   --border-color: rgba(255, 255, 255, 0.2);
   --displayHr: block;
+  --overlayDropdown: rgba(0, 0, 0, 0.5);
   /* About us challenges */
   --greySample: #c2c2c2;
   --text-color: #fff;
@@ -202,6 +203,16 @@ header .header__container .navbar-dark .navbar-toggler {
 
 .header__navbar {
   transition: all var(--transition-time);
+}
+
+.dropdown__btn {
+  background-color: var(--overlayDropdown);
+}
+
+@media screen and (max-width: 900px) {
+  .header__icon {
+    text-align: right;
+  }
 }
 
 /* Xu ly dropdown menu */
