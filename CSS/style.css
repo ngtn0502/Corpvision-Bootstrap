@@ -200,6 +200,12 @@ header .header__container .navbar-dark .navbar-toggler {
   transition: all var(--transition-time);
 }
 
+.header__navbar {
+  transition: all var(--transition-time);
+}
+
+/* Xu ly dropdown menu */
+
 /* Carousel */
 
 .carousel-item .carousel__overlay {
@@ -285,14 +291,16 @@ header .header__container .navbar-dark .navbar-toggler {
   background-position: center;
 }
 
+/* Responsive */
+@media screen and (max-width: 996px) {
+  .myCarousel__content h1 {
+    font-size: 2rem;
+  }
+}
 /* About US */
 
 .darkMode-li {
   color: white;
-}
-
-.aboutUs {
-  margin: 200px 0;
 }
 
 .aboutUS__left li {
@@ -424,8 +432,10 @@ header .header__container .navbar-dark .navbar-toggler {
   transition: all 0.8s;
 }
 
-.services__text a:hover,
-.services__text button:hover {
+.services__btn:hover {
+  --servicesColor: #009f4d;
+}
+.services__anchor:hover {
   --servicesColor: #009f4d;
 }
 

@@ -25,18 +25,28 @@ buttonDarkMode.addEventListener("click", function (e) {
     .classList.toggle("dark-mode-overlay");
 });
 
-////////////////////////////////////////////////////// Carousel mod
-
-////////////////////////////////////////////////////// Fixed header turn black
+////////////////////////////////////////////////////// Header turn black & modify height
 
 const checkHeader = function () {
   let scrollPositon = window.pageYOffset;
   if (scrollPositon >= 650) {
     document.querySelector("header").classList.add("header__darkMode");
+    // ////
+    document.querySelector(".header__navbar").classList.remove("my-3");
   }
   if (scrollPositon < 650) {
-    console.log(`sds`);
     document.querySelector("header").classList.remove("header__darkMode");
+    document.querySelector(".header__navbar").classList.add("my-3");
   }
 };
 window.addEventListener("scroll", checkHeader);
+
+////////////////////////////////////////////////////// Header DROPDOWN
+
+// document
+//   .querySelector(".navbar-toggler")
+//   .addEventListener("click", function (e) {
+//     document.querySelector("header").classList.toggle("backgroundColor-btn");
+//   });
+
+////////////////////////////////////////////////////// Carousel mod
