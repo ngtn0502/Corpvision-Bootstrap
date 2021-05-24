@@ -21,7 +21,13 @@ buttonDarkMode.addEventListener("click", function (e) {
 buttonDarkMode.addEventListener("click", function (e) {
   e.preventDefault();
   document
-    .querySelector(".carousel__overlay")
+    .querySelector("#carousel__overlay1")
+    .classList.toggle("dark-mode-overlay");
+  document
+    .querySelector("#carousel__overlay2")
+    .classList.toggle("dark-mode-overlay");
+  document
+    .querySelector("#carousel__overlay3")
     .classList.toggle("dark-mode-overlay");
 });
 

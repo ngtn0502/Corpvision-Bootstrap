@@ -18,7 +18,7 @@
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
   </head>
   <body>
     <div class="overlay"></div>
@@ -113,7 +113,7 @@
       >
         <div class="carousel-inner">
           <div class="carousel-item active item1" data-interval="2000">
-            <div class="carousel__overlay"></div>
+            <div class="carousel__overlay" id="carousel__overlay1"></div>
 
             <!-- <img
               src="./img/pexels-jessica-lewis-583846.jpg"
@@ -133,7 +133,7 @@
             </div>
           </div>
           <div class="carousel-item item2" data-interval="2000">
-            <div class="carousel__overlay"></div>
+            <div class="carousel__overlay" id="carousel__overlay2"></div>
 
             <!-- <img
               src="./img/pexels-hasan-albari-1229861.jpg"
@@ -153,7 +153,7 @@
             </div>
           </div>
           <div class="carousel-item item3" data-interval="2000">
-            <div class="carousel__overlay"></div>
+            <div class="carousel__overlay" id="carousel__overlay3"></div>
 
             <!-- <img
               src="./img/pexels-negative-space-160107.jpg"
@@ -353,15 +353,15 @@
         <p class="p-all pt-5">OUR gallery</p>
         <h2 class="weight700">Successful projects we've done</h2>
         <div class="row">
-          <div class="gallery__item col-4 my-4 mx-3">
+          <div class="gallery__item col-12 my-4 mx-3">
             <img class="d-block img-fluid" src="./img/c1 (1).jpg" alt="" />
-            <div class="gallery__overlay"></div>
-
-            <div class="gallery__text">
-              <h class="title">Project 1</h>
-              <span class="content"
-                >Quisque ut lectus, eros et, sed commodo risus.</span
-              >
+            <div class="gallery__overlay">
+              <div class="gallery__text text-left ml-5">
+                <h4 class="title">Project 1</h4>
+                <span class="content"
+                  >Quisque ut lectus, eros et, sed commodo risus.</span
+                >
+              </div>
             </div>
           </div>
         </div>
