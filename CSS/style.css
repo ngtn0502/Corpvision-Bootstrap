@@ -150,13 +150,13 @@ body.dark {
 
 header {
   font-weight: bolder;
-  position: absolute;
   left: 50%;
   transform: translatex(-50%);
   z-index: 2000;
   font-size: 1.3rem;
   position: fixed;
   top: 0;
+  width: 100%;
   background-color: var(--headerBgColor);
   transition: all var(--transition-time);
 }
@@ -236,9 +236,6 @@ header .header__container .navbar-dark .navbar-toggler {
   }
 }
 
-@media screen and (max-width) {
-}
-
 /* Xu ly dropdown menu */
 
 /* Carousel */
@@ -291,15 +288,13 @@ header .header__container .navbar-dark .navbar-toggler {
 
 .myCarousel__prev {
   position: absolute;
-  top: 500px;
-  left: 1100px;
+
   font-size: 3rem;
 }
 
 .myCarousel__next {
   position: absolute;
-  top: 500px;
-  left: 1300px;
+
   font-size: 3rem;
 }
 
@@ -575,22 +570,25 @@ header .header__container .navbar-dark .navbar-toggler {
 }
 
 /* Responsive for GALLERY */
+@media screen and (max-width: 566.9px) {
+  .gallery {
+    height: 160rem;
+  }
+}
 
-@media screen and (max-width: 720px) {
+@media screen and (min-width: 567px) and (max-width: 767.9px) {
+  .gallery {
+    height: 180rem;
+  }
   .gallery__item:hover .gallery__text {
     transform: translateY(180%);
   }
 }
+
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .gallery__item:hover .gallery__text {
     transform: translateY(90%);
     font-size: 0.8rem;
-  }
-}
-
-@media screen and (max-width: 767.9px) {
-  .gallery {
-    height: 2450px;
   }
 }
 
@@ -660,6 +658,11 @@ header .header__container .navbar-dark .navbar-toggler {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 991.9px) {
+  .myProgress {
+    height: 125vh;
+  }
+}
 /* FEEDBACK */
 
 .feedback__content .infor__text {
@@ -868,7 +871,7 @@ footer {
 
 footer hr {
   background-color: rgba(255, 255, 255, 0.3);
-  width: 100%;
+  width: 150%;
   z-index: 100;
   margin-top: 0;
 }
