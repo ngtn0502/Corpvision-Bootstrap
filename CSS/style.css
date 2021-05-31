@@ -368,6 +368,13 @@ body.dark {
   color: var(--text-color);
 }
 
+@media screen and (max-width: 556px) {
+  .aboutUs {
+    padding-bottom: 1rem !important;
+    padding-top: 2rem !important;
+  }
+}
+
 /* Challenges */
 
 .challenges {
@@ -427,6 +434,13 @@ body.dark {
 .challenges__box:hover {
   transform: translateY(-0.3rem);
   box-shadow: rgb(46 41 51 / 8%) 1px 20px 4px, rgb(71 63 79 / 16%) 0px 5px 10px;
+}
+
+@media screen and (max-width: 556px) {
+  .challenges__content {
+    padding-bottom: 0;
+    padding-top: 5rem;
+  }
 }
 
 /* SERVICES */
