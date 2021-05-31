@@ -4,7 +4,9 @@
 
 document
   .querySelector("#header__search")
-  .addEventListener("click", function () {
+  .addEventListener("click", function (e) {
+    e.preventDefault();
+
     document.querySelector(".overlay").style.display = "block";
   });
 
