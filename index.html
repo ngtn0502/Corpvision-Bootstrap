@@ -40,8 +40,8 @@
   </head>
   <body>
     <div class="overlay"></div>
-    <header class="container-fluid m-0 p-0">
-      <div class="header__container container" id="header">
+    <section class="container-fluid m-0 p-0 ml-auto" id="header">
+      <div class="header__container container">
         <nav
           class="
             header__navbar
@@ -73,12 +73,12 @@
             id="navbarSupportedContent"
           >
             <ul class="navbar-nav mx-auto text-right delete__anchor">
-              <li class="nav-item mx-2"><a href="">Home</a></li>
-              <li class="nav-item mx-2"><a href="">About</a></li>
-              <li class="nav-item mx-2"><a href="">Service</a></li>
+              <li class="nav-item mx-3"><a href="">Home</a></li>
+              <li class="nav-item mx-3"><a href="">About</a></li>
+              <li class="nav-item mx-3"><a href="">Service</a></li>
               <li class="nav-item dropdown">
                 <a
-                  class="ropdown-toggle"
+                  class="ropdown-toggle mx-3"
                   href="#"
                   id="navbarDropdown"
                   role="button"
@@ -99,7 +99,7 @@
                   <a class="dropdown-item" href="#">Something else here</a>
                 </div>
               </li>
-              <li class="nav-item mx-2"><a href="">Contact</a></li>
+              <li class="nav-item mx-3"><a href="">Contact</a></li>
             </ul>
 
             <div class="header__icon my-auto">
@@ -122,8 +122,8 @@
         </nav>
       </div>
       <hr class="header__hr text-center my-0 py-0" />
-    </header>
-    <section class="myCarousel container-fluid m-0 p-0">
+    </section>
+    <section class="myCarousel contai ner-fluid m-0 p-0">
       <div
         id="carouselExampleInterval"
         class="carousel slide carousel-fade"
@@ -313,53 +313,55 @@
     </section>
 
     <section class="services container-fluid text-center">
-      <h2 class="weight700 my-5">Always there for your care, our Services</h2>
-      <div class="services__content my-3">
-        <div class="row">
-          <div class="services__box col-12 col-md-6 col-lg-4 delete__anchor">
-            <img class="d-block img-fluid" src="./img/s1.jpg" alt="" />
-            <div class="services__text weight700 text-center">
-              <button class="services__btn py-2 px-5 my-4 weight700">
-                Work Expertise
-              </button>
-              <p class="greySample">
-                Venenatis eros et, sed commodo risus. Nullam sit amet laoreet
-                elit..
-              </p>
-              <a class="services__anchor my-5" href="">Learn More</a>
+      <div class="container">
+        <h2 class="weight700 my-5">Always there for your care, our Services</h2>
+        <div class="services__content my-3">
+          <div class="row">
+            <div class="services__box col-12 col-md-6 col-lg-4 delete__anchor">
+              <img class="d-block img-fluid" src="./img/s1.jpg" alt="" />
+              <div class="services__text weight700 text-center">
+                <button class="services__btn py-2 px-5 my-4 weight700">
+                  Work Expertise
+                </button>
+                <p class="greySample">
+                  Venenatis eros et, sed commodo risus. Nullam sit amet laoreet
+                  elit..
+                </p>
+                <a class="services__anchor my-5" href="">Learn More</a>
+              </div>
             </div>
-          </div>
-          <div class="services__box col-12 col-md-6 col-lg-4 delete__anchor">
-            <img class="d-block img-fluid" src="./img/s2.jpg" alt="" />
-            <div class="services__text weight700 text-center">
-              <button class="services__btn py-2 px-5 my-4 weight700">
-                Work Expertise
-              </button>
-              <p class="greySample">
-                Venenatis eros et, sed commodo risus. Nullam sit amet laoreet
-                elit..
-              </p>
-              <a class="services__anchor" href="">Learn More</a>
+            <div class="services__box col-12 col-md-6 col-lg-4 delete__anchor">
+              <img class="d-block img-fluid" src="./img/s2.jpg" alt="" />
+              <div class="services__text weight700 text-center">
+                <button class="services__btn py-2 px-5 my-4 weight700">
+                  Work Expertise
+                </button>
+                <p class="greySample">
+                  Venenatis eros et, sed commodo risus. Nullam sit amet laoreet
+                  elit..
+                </p>
+                <a class="services__anchor" href="">Learn More</a>
+              </div>
             </div>
-          </div>
-          <div
-            class="
-              services__box
-              col-12 col-md-6 col-lg-4
-              delete__anchor
-              services__img3
-            "
-          >
-            <img class="d-block img-fluid" src="./img/s3.jpg" alt="" />
-            <div class="services__text weight700 text-center">
-              <button class="services__btn py-2 px-5 my-4 weight700">
-                Work Expertise
-              </button>
-              <p class="greySample">
-                Venenatis eros et, sed commodo risus. Nullam sit amet laoreet
-                elit..
-              </p>
-              <a class="services__anchor my-5" href="">Learn More</a>
+            <div
+              class="
+                services__box
+                col-12 col-md-6 col-lg-4
+                delete__anchor
+                services__img3
+              "
+            >
+              <img class="d-block img-fluid" src="./img/s3.jpg" alt="" />
+              <div class="services__text weight700 text-center">
+                <button class="services__btn py-2 px-5 my-4 weight700">
+                  Work Expertise
+                </button>
+                <p class="greySample">
+                  Venenatis eros et, sed commodo risus. Nullam sit amet laoreet
+                  elit..
+                </p>
+                <a class="services__anchor my-5" href="">Learn More</a>
+              </div>
             </div>
           </div>
         </div>
@@ -569,7 +571,7 @@
         <p class="p-all">HAPPY CLIENTS FEEDBACK</p>
         <h2 class="weight700">Reviews and Testimonials</h2>
         <div class="text-center">
-          <div class="feedback__text my-5 p-5 ml-auto">
+          <div class="feedback__text my-1 p-5 ml-auto">
             <p class="p-all">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit,
               maxime nisi, cupiditate quas atque beatae illum doloremque
@@ -825,7 +827,7 @@
           </div>
         </div>
       </div>
-      <hr class="container-fluid mt-5" />
+      <hr class="mt-5" />
       <div class="container text-center pb-3">
         <span class="footer__end p-all2"
           >© 2021 Corp Vision All Rights Reserved | WordPress Theme by

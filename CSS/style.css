@@ -148,17 +148,17 @@ body.dark {
   transition: all 1s;
 }
 
-header {
-  font-weight: bolder;
-  left: 50%;
-  transform: translatex(-50%);
-  z-index: 2000;
-  font-size: 1.3rem;
+#header {
   position: fixed;
+  z-index: 2000;
+  left: 0;
   top: 0;
   width: 100%;
   background-color: var(--headerBgColor);
   transition: all var(--transition-time);
+  z-index: 2000;
+  font-size: 1.3rem;
+  font-weight: bolder;
 }
 
 .header__icon i {
@@ -206,7 +206,7 @@ header {
   display: var(--displayHr);
 }
 
-header .header__container .navbar-dark .navbar-toggler {
+#header .header__container .navbar-dark .navbar-toggler {
   border-color: var(--border-color);
   transition: all var(--transition-time);
 }
@@ -871,7 +871,7 @@ footer {
 
 footer hr {
   background-color: rgba(255, 255, 255, 0.3);
-  width: 150%;
+  width: 100%;
   z-index: 100;
   margin-top: 0;
 }

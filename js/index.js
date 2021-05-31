@@ -38,12 +38,12 @@ buttonDarkMode.addEventListener("click", function (e) {
 const checkHeader = function () {
   let scrollPositon = window.pageYOffset;
   if (scrollPositon >= 650) {
-    document.querySelector("header").classList.add("header__darkMode");
+    document.querySelector("#header").classList.add("header__darkMode");
     // ////
     document.querySelector(".header__navbar").classList.remove("my-3");
   }
   if (scrollPositon < 650) {
-    document.querySelector("header").classList.remove("header__darkMode");
+    document.querySelector("#header").classList.remove("header__darkMode");
     document.querySelector(".header__navbar").classList.add("my-3");
   }
 };
@@ -57,4 +57,6 @@ document
     document.querySelector("header").classList.toggle("dropdown__btn");
   });
 
-////////////////////////////////////////////////////// Carousel mod
+////////////////////////////////////////////////////// Owl Carousel mod
+
+////////////////////////////////////////////////////// Smooth scrolling
