@@ -570,33 +570,33 @@ body.dark {
 }
 
 /* Responsive for GALLERY */
-@media screen and (max-width: 566.9px) {
+/* @media screen and (max-width: 566.9px) {
   .gallery {
     height: 160rem;
   }
-}
+} */
 
 @media screen and (min-width: 567px) and (max-width: 767.9px) {
-  .gallery {
+  /* .gallery {
     height: 180rem;
-  }
+  } */
   .gallery__item:hover .gallery__text {
     transform: translateY(180%);
   }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1200px) {
+/* @media screen and (min-width: 992px) and (max-width: 1200px) {
   .gallery__item:hover .gallery__text {
     transform: translateY(90%);
     font-size: 0.8rem;
   }
-}
+} */
 
-@media screen and (min-width: 768) and (max-width: 991.9px) {
+/* @media screen and (min-width: 768) and (max-width: 991.9px) {
   .gallery {
     height: 1000px;
   }
-}
+} */
 
 .gallery hr {
   background-color: rgba(255, 255, 255, 0.3);
@@ -606,9 +606,9 @@ body.dark {
 
 /* PROGRESS */
 
-.myProgress {
+/* .myProgress {
   height: 65vh;
-}
+} */
 
 .myProgress__left {
 }
@@ -652,7 +652,7 @@ body.dark {
   background-image: linear-gradient(-224deg, #e77654, #e5529a);
 }
 
-@media screen and (max-width: 767.9px) {
+/* @media screen and (max-width: 767.9px) {
   .myProgress {
     height: 100vh;
   }
@@ -662,7 +662,7 @@ body.dark {
   .myProgress {
     height: 125vh;
   }
-}
+} */
 /* FEEDBACK */
 
 .feedback__content .infor__text {
