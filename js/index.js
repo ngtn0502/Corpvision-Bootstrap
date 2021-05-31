@@ -37,7 +37,8 @@ buttonDarkMode.addEventListener("click", function (e) {
 
 const checkHeader = function () {
   let scrollPositon = window.pageYOffset;
-  if (scrollPositon >= 650) {
+  let headerHeight = document.querySelector("#header").clientHeight;
+  if (scrollPositon >= headerHeight) {
     document.querySelector("#header").classList.add("header__darkMode");
     // ////
     document.querySelector(".header__navbar").classList.remove("my-3");
