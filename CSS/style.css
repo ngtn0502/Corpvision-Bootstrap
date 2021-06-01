@@ -286,16 +286,42 @@ body.dark {
   position: relative;
 }
 
-.myCarousel__prev {
+.carousel-btn {
   position: absolute;
-
-  font-size: 3rem;
+  width: 100%;
+  right: 5rem;
+  bottom: 5rem;
+  z-index: 100;
 }
 
-.myCarousel__next {
-  position: absolute;
+.btn-prev {
+  background: #151421;
+  border: 0;
+  width: 50px;
+  height: 50px;
+  font-size: 2rem;
+  line-height: 2rem;
+  outline: none;
+  cursor: pointer;
+  border-radius: 100%;
+  color: white;
+  box-shadow: 0 0 15px rgb(0 0 0 / 12%);
+  border: 1px solid #151421;
+}
 
-  font-size: 3rem;
+.btn-next {
+  background: #151421;
+  border: 0;
+  width: 50px;
+  height: 50px;
+  font-size: 2rem;
+  line-height: 2rem;
+  outline: none;
+  cursor: pointer;
+  border-radius: 100%;
+  color: white;
+  box-shadow: 0 0 15px rgb(0 0 0 / 12%);
+  border: 1px solid #151421;
 }
 
 .myCarousel .carousel-item {
@@ -322,6 +348,13 @@ body.dark {
 @media screen and (max-width: 996px) {
   .myCarousel__content h1 {
     font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .carousel-btn {
+    right: 0.5rem;
+    bottom: 2rem;
   }
 }
 
@@ -451,7 +484,7 @@ body.dark {
 
 .services__text {
   position: absolute;
-  top: 120%;
+  top: 125%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -477,7 +510,23 @@ body.dark {
   --servicesColor: #009f4d;
 }
 
-@media screen and (max-width: 767.9px) {
+@media screen and (max-width: 575.9px) {
+  .services {
+    font-size: 0.8rem;
+  }
+
+  .services__box {
+    margin-bottom: 150px;
+  }
+  .services__text {
+    top: 120%;
+  }
+  .services__text button {
+    padding: 8px 50px !important;
+  }
+}
+
+@media screen and (min-width: 567px) and (max-width: 767.9px) {
   .services__box {
     margin-bottom: 200px;
   }
