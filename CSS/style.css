@@ -355,6 +355,7 @@ body.dark {
   .carousel-btn {
     right: 0.5rem;
     bottom: 2rem;
+    font-size: 0.5rem;
   }
 }
 
