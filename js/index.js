@@ -2,13 +2,28 @@
 
 ////////////////////////////////////////////////////// Search
 
-// document
-//   .querySelector("#header__search")
-//   .addEventListener("click", function (e) {
-//     e.preventDefault();
+document
+  .querySelector("#header__search")
+  .addEventListener("click", function (e) {
+    e.preventDefault();
+    document.querySelector(".overlay__search").classList.toggle("hidden");
+    document.querySelector(".search__text").focus();
+  });
 
-//     document.querySelector(".overlay").style.display = "block";
-//   });
+document.onkeydown = function (e) {
+  if (e.key == "Escape" || e.key == "Esc" || e.key == "Enter") {
+    document.querySelector(".overlay__search").classList.add("hidden");
+    document.querySelector(".search__text").value = "";
+  }
+};
+
+document
+  .querySelector(".search__exitbtn")
+  .addEventListener("click", function (e) {
+    e.preventDefault();
+    document.querySelector(".overlay__search").classList.add("hidden");
+    document.querySelector(".search__text").value = "";
+  });
 
 ////////////////////////////////////////////////////// Darkmode body
 
