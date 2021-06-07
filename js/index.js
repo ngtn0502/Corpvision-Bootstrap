@@ -1,4 +1,15 @@
 "use strict";
+///////////// Smooth scrolling by delegate DOM
+
+document.querySelector("#navbar-nav").addEventListener("click", (element) => {
+  element.preventDefault();
+  console.log(element.target);
+  if (element.target.classList.contains("nav-a")) {
+    const id = element.target.getAttribute("href");
+    console.log(id);
+    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+  }
+});
 
 ////////////////////////////////////////////////////// Search
 
@@ -73,6 +84,4 @@ document
     document.querySelector("header").classList.toggle("dropdown__btn");
   });
 
-////////////////////////////////////////////////////// Owl Carousel mod
-
-////////////////////////////////////////////////////// Smooth scrolling
+////////////////////////////////////////////////////// Owl Carousel LIB

@@ -131,6 +131,11 @@ body.dark {
 }
 
 /* HEADER */
+.dropdown-menu a {
+  color: #fff;
+  font-weight: 700;
+}
+
 .header__darkMode {
   --headerColor: black;
   --headerBgColor: white;
