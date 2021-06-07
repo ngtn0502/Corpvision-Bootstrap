@@ -109,6 +109,7 @@ body.dark {
   border: none;
   border-radius: 10px;
   transition: all 0.5s;
+  z-index: 1000;
 }
 
 .weight700 {
@@ -120,6 +121,7 @@ body.dark {
   background-color: #008030;
   border-color: #00732c;
   transition: all 0.5s;
+  cursor: pointer;
 }
 
 .p-all {
@@ -318,9 +320,9 @@ body.dark {
 
 .carousel-btn {
   position: absolute;
-  width: 100%;
-  right: 5rem;
-  bottom: 5rem;
+  width: 50%;
+  right: 5%;
+  bottom: 12.5%;
   z-index: 100;
 }
 
@@ -541,7 +543,22 @@ body.dark {
   --servicesColor: #009f4d;
 }
 
-@media screen and (max-width: 575.9px) {
+@media screen and (max-width: 320px) {
+  .services {
+    font-size: 0.8rem;
+  }
+  .services__box {
+    margin-bottom: 150px;
+  }
+  .services__text button {
+    padding: 8px 50px !important;
+  }
+  .services__text {
+    top: 126%;
+  }
+}
+
+@media screen and (min-width: 320.1px) and (max-width: 575.9px) {
   .services {
     font-size: 0.8rem;
   }
@@ -550,10 +567,10 @@ body.dark {
     margin-bottom: 150px;
   }
   .services__text {
-    top: 120%;
+    top: 112%;
   }
   .services__text button {
-    padding: 8px 50px !important;
+    padding: 15px 80px !important;
   }
 }
 
