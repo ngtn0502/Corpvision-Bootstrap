@@ -96,7 +96,6 @@ document.querySelector("#btnBackToTop").addEventListener("click", (e) => {
 window.addEventListener("scroll", () => {
   window.pageYOffset < 350 &&
     document.querySelector("#btnBackToTop").classList.add("invalidBTP");
-
-  window.pageYOffset > 400 &&
+  window.pageYOffset > 351 &&
     document.querySelector("#btnBackToTop").classList.remove("invalidBTP");
 });
