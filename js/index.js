@@ -85,3 +85,18 @@ document
   });
 
 ////////////////////////////////////////////////////// Owl Carousel LIB
+
+////////////////////////////////////////////////////// Back To Top
+document.querySelector("#btnBackToTop").addEventListener("click", (e) => {
+  e.preventDefault();
+  document.querySelector("#fakeHeader").scrollIntoView({ behavior: "smooth" });
+  console.log(window.pageYOffset);
+});
+
+window.addEventListener("scroll", () => {
+  window.pageYOffset < 350 &&
+    document.querySelector("#btnBackToTop").classList.add("invalidBTP");
+
+  window.pageYOffset > 400 &&
+    document.querySelector("#btnBackToTop").classList.remove("invalidBTP");
+});
